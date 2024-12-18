@@ -7,15 +7,17 @@
   "private": true,
   "dependencies": {
     "@cap-js/hana": "^1",
-    "@sap/cds": "^8",
+    "@sap/cds": "^8.5.1",
     "@sap/cds-common-content": "^2.1.0",
+    "@sap/cds-compiler": "^5.6.0",
     "@sap/hana-client": "^2.23.24",
     "@sap/hdi-deploy": "^5.3.2",
     "@sap/xssec": "^4",
     "express": "^4"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-interaction_items": "cds watch --open interaction_items/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "build": {
@@ -34,11 +36,14 @@
         "kind": "hana-cloud"
       },
       "requires": {
-        "auth": "xsuaa"
+        "auth": "mocked"
       }
     }
   },
   "sql": {
     "native_hana_associations": false
-  }
+  },
+  "sapux": [
+    "app/interaction_items"
+  ]
 }

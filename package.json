@@ -10,6 +10,7 @@
     "@sap/cds": "^8.5.1",
     "@sap/cds-common-content": "^2.1.0",
     "@sap/cds-compiler": "^5.6.0",
+    "@sap/cds-dk": "^8.6.1",
     "@sap/hana-client": "^2.23.24",
     "@sap/hdi-deploy": "^5.3.2",
     "@sap/xssec": "^4",

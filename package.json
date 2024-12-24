@@ -36,7 +36,7 @@
         "kind": "hana-cloud"
       },
       "requires": {
-        "auth": "mocked"
+        "auth": "xsuaa"
       }
     }
   },
